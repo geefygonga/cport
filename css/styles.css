@@ -45,10 +45,18 @@ a:hover {
 	text-decoration: underline;
 }
 
+.nolink {
+	color:#f5deb3;
+	text-decoration: none;
+	font-weight: 600;
+	text-shadow: 1px 1px #003344;
+
+}
+
 .jump {
 	color: #f5deb3;        
   	margin: 0 8px;      
-  	font-weight: bold;
+  	font-weight: 600;
   	font-size: 1.2em;
   	text-shadow: 1px 1px #003344;
 }
