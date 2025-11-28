@@ -13,20 +13,6 @@ body {
 	background-image: none;
 }
 
-body::before {
-	content: "";
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
-	background-image: url("../assets/background.gif");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-}
-
 h1 {
 	color: #e9b140;
 	text-shadow: 1px 1px #003344;
@@ -64,4 +50,13 @@ a:hover {
 .linker {
 	grid-template-rows: repeat(1, minmax(0, 1fr));
 	display: grid;
+}
+
+#vanta-bg {
+  position: fixed;   /* stays in place */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;       /* pushes it behind your content */
 }

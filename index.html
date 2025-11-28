@@ -4,6 +4,8 @@
     <title>Cole Gilman</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="preload" href="assets/background.gif" as="gif">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
 </head>
 
 <body>
@@ -24,4 +26,18 @@
                 </a>
             </span>
             <span class="nolink">cole@geefygonga.xyz</span>
+        <div id="vanta-bg"></div>
 </body></html>
+
+<script>
+    VANTA.WAVES({
+        el: "#vanta-bg",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00
+        })
+</script>
