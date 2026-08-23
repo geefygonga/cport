@@ -14,12 +14,12 @@
 
 <body>
     <div id="vanta-bg"></div>
-    <div class="">
+    <div class="content">
         <h1>
             Aventureuse
         </h1>
         <div class="linker">
-            <span style="display: flex; flex-direction: row; justify-content: center;">
+            <span class="nav-links">
                 <a href="https://github.com/geefygonga" target="_blank">
                     <span>Games</span>
                 </a> <span class="jump">~</span>
@@ -36,22 +36,26 @@
             <a href="mailto:colegilman15@gmail.com" class="nolink">colegilman15@gmail.com</a>
         </div>
     </div>
+
+    <script>
+        VANTA.GLOBE({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xe9b140,
+            color2: 0xf5deb3,
+            backgroundColor: 0x003344,
+            size: 1.10
+        });
+
+        requestAnimationFrame(() => {
+            document.querySelector('.content').classList.add('is-visible');
+        });
+    </script>
 </body>
 </html>
-
-<script>
-VANTA.GLOBE({
-  el: "#vanta-bg",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00,
-  color: 0xe9b140,
-  color2: 0xf5deb3,
-  backgroundColor: 0x003344,
-  size: 1.10
-})
-</script>
