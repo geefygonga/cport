@@ -131,9 +131,11 @@ a:hover {
 		width: 100%;
 		max-width: 100%;
 		height: auto;
-		min-height: 100dvh;
+		gap: 20px;
+		padding: 28px 24px;
 		border-right: none;
-		box-shadow: none;
+		border-bottom: 1px solid rgba(74, 124, 89, 0.4);
+		box-shadow: 0 4px 32px rgba(74, 124, 89, 0.12);
 	}
 
 	.sidebar::before,
