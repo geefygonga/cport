@@ -2,9 +2,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aventureuse</title>
-    <meta name="description" content="Aventureuse — games, projects, and services.">
+    <meta name="description" content="Aventureuse — personal and business links.">
     <meta property="og:title" content="Aventureuse">
-    <meta property="og:description" content="Games, projects, and services.">
+    <meta property="og:description" content="Personal and business links.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://aventureuse.org">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,28 +17,34 @@
 
 <body>
     <div id="vanta-bg"></div>
-    <div class="content">
-        <h1>
-            Aventureuse
-        </h1>
-        <div class="linker">
-            <span class="nav-links">
-                <a href="#">
-                    <span>Resume</span>
-                </a> <span class="jump">//</span>
-                <a href="https://github.com/geefygonga" target="_blank">
-                    <span>Projects</span>
-                </a> <span class="jump">//</span>
-                <a href="#">
-                    <span>Services</span>
-                </a> <span class="jump">//</span>
-                <a href="https://www.linkedin.com/in/aventureuse" target="_blank">
-                    <span>LinkedIn</span>
-                </a>
-            </span>
-            <a href="mailto:colegilman15@gmail.com" class="nolink">colegilman15@gmail.com</a>
+    <nav class="sidebar" id="sidebar">
+        <h1>Aventureuse</h1>
+
+        <div class="nav-group">
+            <span class="nav-label">// Personal</span>
+            <a href="#">
+                <span>Resume</span>
+            </a>
+            <a href="https://github.com/geefygonga" target="_blank">
+                <span>Personal Projects</span>
+            </a>
         </div>
-    </div>
+
+        <div class="nav-group">
+            <span class="nav-label">// Business</span>
+            <a href="#">
+                <span>Work Projects</span>
+            </a>
+            <a href="#">
+                <span>Services</span>
+            </a>
+            <a href="https://www.linkedin.com/in/aventureuse" target="_blank">
+                <span>LinkedIn</span>
+            </a>
+        </div>
+
+        <a href="mailto:colegilman15@gmail.com" class="nolink contact-line">colegilman15@gmail.com</a>
+    </nav>
 
     <script>
         VANTA.GLOBE({
@@ -57,7 +63,7 @@
         });
 
         requestAnimationFrame(() => {
-            document.querySelector('.content').classList.add('is-visible');
+            document.getElementById('sidebar').classList.add('is-visible');
         });
     </script>
 </body>
